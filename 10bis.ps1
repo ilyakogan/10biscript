@@ -42,7 +42,7 @@ Function HttpGetHtml($url)
 	add-type -Path "HtmlAgilityPack.dll"
 	$doc = New-Object HtmlAgilityPack.HtmlDocument 
 	$doc.Load($tempFile, [System.Text.Encoding]::UTF8) 
-	Remove-Item $tempFile
+	Remove-Item $tempFile -ErrorAction SilentlyContinue
 	$doc
 }
 
