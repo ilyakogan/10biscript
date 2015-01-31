@@ -1,5 +1,5 @@
 # How to run:
-# 10bis your_email your_password
+# .\10bis.ps1 your_email your_password
 #
 # Output:
 # A CSV file with your purchase history. The file will be saved in the working directory.
